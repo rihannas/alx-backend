@@ -2,9 +2,9 @@
 
 #### Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
-    How to paginate a dataset with simple page and page_size parameters
-    How to paginate a dataset with hypermedia metadata
-    How to paginate in a deletion-resilient manner
+*How to paginate a dataset with simple page and page_size parameters
+*How to paginate a dataset with hypermedia metadata
+*How to paginate in a deletion-resilient manner
 
 #### Task 0
 [0-simple_helper_function.py](https://github.com/avocadoclouds/alx-backend/blob/main/0x00-pagination/0-simple_helper_function.py)
