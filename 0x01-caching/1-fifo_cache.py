@@ -32,6 +32,7 @@ class FIFOCache(BaseCaching):
             # dict keeps insertion order
             key = next(iter(self.cache_data))
             self.cache_data.pop(key)
+            print("DISCARD: {}".format(key))
 
         def get(self, key):
             """
