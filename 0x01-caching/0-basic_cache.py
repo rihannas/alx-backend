@@ -35,10 +35,10 @@ class BasicCache(BaseCaching):
         Get an item by key
         """
         if key is None:
-            pass
+            None
 
         elif key not in self.cache_data:
-            pass
+            None
 
         else:
             return self.cache_data.get(key)
