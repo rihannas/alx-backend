@@ -21,7 +21,7 @@ class BasicCache(BaseCaching):
     """ inherits from BaseCaching and is a caching system """
 
     def put(self, key, item):
-        """ 
+        """
         Add an item in the cache
         """
         if key is None or item is None:
