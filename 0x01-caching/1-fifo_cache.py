@@ -30,7 +30,8 @@ class FIFOCache(BaseCaching):
         if len(self.cache_data) > BaseCaching.MAX_ITEMS:
             # next(iter(dic)) removes 1st item
             # dict keeps insertion order
-            key = next(iter(self.cache_data))
+            # key = next(iter(self.cache_data))
+            key = sorted(self.cache_data)[0]
             self.cache_data.pop(key)
             print("DISCARD: {}".format(key))
 
