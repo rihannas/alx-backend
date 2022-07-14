@@ -24,14 +24,13 @@ class FIFOCache(BaseCaching):
         if key is None or item is None:
             pass
 
-        else:
+        elif item and key:
             self.cache_data[key] = item
 
         if len(self.cache_data) > BaseCaching.MAX_ITEMS:
             # next(iter(dic)) removes 1st item
             # dict keeps insertion order
-            # key = next(iter(self.cache_data))
-            key = sorted(self.cache_data)[0]
+            key = next(iter(self.cache_data))
             self.cache_data.pop(key)
             print("DISCARD: {}".format(key))
 
