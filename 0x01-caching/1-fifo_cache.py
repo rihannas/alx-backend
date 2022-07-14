@@ -30,7 +30,7 @@ class FIFOCache(BaseCaching):
             # next(iter(dic)) removes 1st item
             # dict keeps insertion order
             key = next(iter(self.cache_data))
-            self.cache_data.pop(key)
+            del self.cache_data[key]
             print("DISCARD: {}".format(key))
 
         def get(self, key):
