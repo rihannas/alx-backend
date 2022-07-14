@@ -22,10 +22,9 @@ class FIFOCache(BaseCaching):
         be discarded as for the fifo algorithm
         """
         if key is None or item is None:
-            pass
+            return
 
-        elif item and key:
-            self.cache_data[key] = item
+        self.cache_data[key] = item
 
         if len(self.cache_data) > BaseCaching.MAX_ITEMS:
             # next(iter(dic)) removes 1st item
