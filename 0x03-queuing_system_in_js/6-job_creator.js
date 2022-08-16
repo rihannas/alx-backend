@@ -1,5 +1,5 @@
-import kue from 'kue'
-const queue = kue.createQueue()
+import kue from 'kue';
+const queue = kue.createQueue();
 
 const jobData = {
   phoneNumber: "777777",
